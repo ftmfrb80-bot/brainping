@@ -1,4 +1,4 @@
-        baseURL = "http://example.org/" 
+   baseURL = 'https://brainping.me/'
         languageCode = "en-us"
         title = "BrainPing" 
 

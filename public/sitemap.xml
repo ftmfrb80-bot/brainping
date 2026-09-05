@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://brainping.me/</loc>
+    <lastmod>2026-09-05T23:09:26+03:30</lastmod>
+  </url><url>
+    <loc>https://brainping.me/posts/second-post/</loc>
+    <lastmod>2026-09-05T23:09:26+03:30</lastmod>
+  </url><url>
+    <loc>https://brainping.me/posts/</loc>
+    <lastmod>2026-09-05T23:09:26+03:30</lastmod>
+  </url><url>
+    <loc>https://brainping.me/posts/first-post/</loc>
     <lastmod>2026-09-05T13:57:28+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-09-05T13:57:28+03:30</lastmod>
+    <loc>https://brainping.me/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://brainping.me/tags/</loc>
   </url>
 </urlset>
