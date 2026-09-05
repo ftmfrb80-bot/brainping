@@ -26,7 +26,7 @@ jobs:
       - name: Sync files to FTP
         uses: SamKirsch/ftp-deploy-action@v4.3.4
         with:
-          server: ${{ https://brainping.me:2222 }}
-          username: ${{ braingr }}
-          password: ${{ pE4stQ0I#52Os; }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /public_html/
