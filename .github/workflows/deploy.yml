@@ -24,12 +24,14 @@ jobs:
       - name: Build Hugo Site
         run: hugo --minify
 
-      - name: Sync files via SFTP/FTP
-        uses: sebastianpopp/ftp-action@v2.0.0
+      - name: Sync files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: "public"
-          remoteDir: "public_html"
-          options: "--passive"
+          local-dir: ./public/
+          server-dir: ./public_html/
+          port: 21
+          protocol: ftp
+          security: loose
