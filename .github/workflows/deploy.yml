@@ -33,3 +33,4 @@ jobs:
           local-dir: ./public/
           server-dir: ./public_html/
           port: 21
+          timeout: 600000
