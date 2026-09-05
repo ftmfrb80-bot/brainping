@@ -25,9 +25,10 @@ jobs:
         run: hugo --minify
 
       - name: Sync files via FTP
-        uses: SamKirschner/ftp-deploy-action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/
+          local-dir: ./public/
+          server-dir: ./public_html/
