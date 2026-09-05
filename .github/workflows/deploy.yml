@@ -9,7 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
@@ -20,11 +21,11 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build
+      - name: Build Hugo Site
         run: hugo --minify
 
-      - name: Sync files to FTP
-        uses: SamKirsch/ftp-deploy-action@v4.3.4
+      - name: Sync files via FTP
+        uses: SamKirschner/ftp-deploy-action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
